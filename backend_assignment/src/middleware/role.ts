@@ -8,7 +8,7 @@ interface AuthenticatedRequest extends Request {
 
 export const checkAdminRole = (req: AuthenticatedRequest, res: Response, next: NextFunction): Response | void => {
   try {
-    const getRoles = 'https://yourapp.com/roles';
+    const getRoles = 'https://dev-directory/roles';
     const roles: string[] = req.user?.[getRoles] || [];
 
     if (roles.includes('admin')) {
