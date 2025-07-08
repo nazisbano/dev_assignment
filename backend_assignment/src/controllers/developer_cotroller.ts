@@ -62,7 +62,7 @@ export const createDeveloper = async (
   }
 };
 
-// @desc    Update a developer (only by owner)
+// @desc    Update a developer 
 // @route   PUT /api/developers/:id
 // @access  Private (owner only)
 export const updateDeveloper = async (
@@ -91,7 +91,7 @@ export const updateDeveloper = async (
   }
 };
 
-// @desc    Delete a developer (only by owner or admin if logic added)
+// @desc    Delete a developer (only by owner or admin)
 // @route   DELETE /api/developers/:id
 // @access  Private (owner only or admin)
 export const deleteDeveloper = async (
